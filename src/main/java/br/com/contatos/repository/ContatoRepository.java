@@ -10,7 +10,6 @@ import java.util.List;
 import java.util.Optional;
 
 //https://docs.spring.io/spring-data/jpa/docs/current-SNAPSHOT/reference/html/#jpa.query-methods
-@Repository
 public interface ContatoRepository extends JpaRepository<Contato, Long> {
 
     public Optional<Contato> findByNome(String nome);

@@ -2,6 +2,7 @@ package br.com.contatos.service;
 
 import br.com.contatos.model.Contato;
 import br.com.contatos.repository.ContatoRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cglib.core.Local;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +13,7 @@ import java.util.Optional;
 @Service
 public class ContatoService {
 
+    @Autowired
     private ContatoRepository contatoRepository;
 
     public Contato gravarContato(Contato contato){

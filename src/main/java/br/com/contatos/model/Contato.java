@@ -11,10 +11,10 @@ public class Contato {
     @Id
     @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
-            generator = "TB_CONTATOS_SEQ")
+            generator = "CONTATOS_SEQ")
     @SequenceGenerator(
-            name = "TB_CONTATOS_SEQ",
-            sequenceName = "TB_CONTATOS_SEQ",
+            name = "CONTATOS_SEQ",
+            sequenceName = "CONTATOS_SEQ",
             allocationSize = 1)
     private Long id;
     private String nome;
